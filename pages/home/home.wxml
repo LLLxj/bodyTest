@@ -1,0 +1,65 @@
+<!--pages/home/home.wxml-->
+<view class="wrap" style="width:{{width}}px;height:{{height}}px;">
+  <view class="content">
+    <view class="banner">
+      <image mode="widthFix" style="width:{{width*7/10}}px;height:{{width*7/10}}px;" src="../../images/banner.png"></image>
+    </view>
+    <view class="info first">根据黑格力斯AI算法，只需拍摄照片</view>
+    <view class="info">即可快速监测出你的体态问题</view>
+  </view>
+
+  <view class="foot">
+    <view class="top">
+      <view class="img-bor" bindtap='hasRead'>
+        <image mode="widthFix" wx-if="{{!hasRead}}" src="../../images/noSelect.png"></image>
+        <image mode="widthFix" wx-if="{{hasRead}}" src="../../images/confirm.png"></image>
+      </view>
+      
+      <view class="agree">已阅读并同意黑格力斯<text class="sign" bindtap='toAgree'>用户协议</text></view>
+      <view class="clear"></view>
+    </view>
+
+    <view>
+      <button open-type="getPhoneNumber" wx:if="{{hasRead}}" hover-class="button-hover" class="start-btn btn-btn" bindgetphonenumber="getPhoneNumber">
+        <cover-view class="btn-handle start" >
+          开始评估
+        </cover-view>
+      </button>
+
+      <button class="btn-btn fake-btn" wx:if="{{!hasRead}}">
+        <cover-view class="btn-handle fake-start">
+          开始评估
+        </cover-view>
+      </button>
+
+      <button bindtap='shareToFriend' class="share-btn btn-btn" open-type='share' style="margin-top:{{hasRead ? '10' : '20'}}rpx;"> 
+        <cover-view class="btn-handle share">
+          推荐给好友
+        </cover-view>
+      </button>
+    </view>
+
+
+  </view>
+
+  <!-- <view class="btn-border">
+    <view class="btn">
+      <view>
+        <view class="btn-handle start">开始评估</view>
+        <view class="start-btn">
+          <button open-type="getPhoneNumber" class="start-btn" bindgetphonenumber="getPhoneNumber"></button>
+        </view>
+      </view>
+      
+      
+      <view class="btn-handle share">推荐给好友</view> 
+      <view class="share-btn">
+        <button bindtap='shareToFriend'  open-type='share'> 
+      </button>
+      </view>
+      
+    </view>
+  </view> -->
+  
+</view>
+

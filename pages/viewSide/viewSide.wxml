@@ -1,0 +1,15 @@
+<!--pages/viewFace/viewFace.wxml-->
+<view class="wrap">
+
+  <view class="content">
+    <image mode="widthFix" src="{{src}}"></image>
+  </view>
+
+  <view class="foot">
+    <view class="btn again" bindtap='toAgain'>重新拍摄</view>
+    <view class="btn toTakeSide" bindtap='getResult'>生成报告</view>
+    <view class="clear"></view>
+  </view>
+
+</view>
+

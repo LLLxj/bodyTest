@@ -1,0 +1,33 @@
+<!--pages/result/result.wxml-->
+<view class="wrap">
+  <view class="content">
+    <view class="list" wx:for="{{dataList}}" wx:key="item.did" bindtap="getDetail" data-id='{{item.did}}'>
+      <view class="showImg">
+        <image mode="widthFix" src="{{item.positivePic}}"></image>
+      </view>
+      <view class="showInfo">
+        <view class="showNum">
+          <text class="getNum">体态评分:{{item.score}}</text>
+          <text class="getNum showAd" style="background:#FB8C34">需要警惕</text>
+          <view class="clear"></view>
+        </view>
+        <view class="showWarn">
+          <text class="warnInfo">{{item.riskdict.dangerous}}项高风险;{{item.riskdict.warning}}项潜在风险;{{item.riskdict.normal}}项正常         </text>
+        </view>
+        <view class="showDate">
+          <text class="dateInfo">{{item.addtime}}</text>
+        </view>
+      </view>
+      <view class="clear"></view>
+      <view class="cornerTitle" wx:if="{{item.isNew == 1}}">
+        <image mode="widthFix" src="../../images/corner.png"></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- <view class="cover" style="width:{{width}}px;height:{{height}}px">
+  <view class="scan-bor">
+    <image src="../../images/scan.gif"></image>
+  </view>
+</view> -->

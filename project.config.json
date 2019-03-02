@@ -1,0 +1,128 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.5.1",
+	"appid": "wx0a81a9db121f1744",
+	"projectname": "bodyTest",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 11,
+			"list": [
+				{
+					"id": -1,
+					"name": "111",
+					"pathName": "pages/bodyDate/bodyDate",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "111",
+					"pathName": "pages/takePic/takePic",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "viewFace",
+					"pathName": "pages/viewFace/viewFace",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "result",
+					"pathName": "pages/result/result",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "home",
+					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "agreeMent",
+					"pathName": "pages/agreeMent/agreeMent",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "viewSide",
+					"pathName": "pages/viewSide/viewSide",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "bodyDate",
+					"pathName": "pages/bodyDate/bodyDate",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "takePic",
+					"pathName": "pages/takePic/takePic",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "takeSide",
+					"pathName": "pages/takeSide/takeSide",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "resultDetil",
+					"pathName": "pages/resultDetil/resultDetil",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "test",
+					"pathName": "pages/test/test",
+					"scene": null
+				}
+			]
+		}
+	}
+}

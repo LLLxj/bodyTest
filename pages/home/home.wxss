@@ -1,0 +1,115 @@
+.clear{
+  clear: both;
+}
+.content{
+  width:100%;
+  padding-top: 60rpx;
+}
+.button-hover {
+  background-color: #fff;
+}
+.banner{
+  width:70%;
+  margin:0 auto;
+}
+.content images{
+  display:block;
+  margin:0 auto
+}
+.foot{
+  position:fixed;
+  /* position:fixed;
+  height:350rpx;
+  bottom:0rpx; */
+  width:100%;
+}
+
+.info{
+  font-size: 30rpx;
+  width:100%;
+  text-align: center;
+  margin-top:10rpx;
+}
+.first{
+  margin-top:50rpx;
+}
+.top{
+  width:70%;
+  margin: 0 auto;
+}
+.top .img-bor{
+  width:30rpx;
+  height:30rpx;
+  float:left;
+  margin-top:50rpx;
+  margin-left: 12%;
+  border-radius:50%;
+}
+.img-bor image{
+  width:100%;
+  display:block;
+  margin-top:0;
+}
+.agree{
+  float:left;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 45rpx;
+  color:#666666;
+}
+.sign{
+  color: #24c789;
+  text-decoration: underline
+}
+.btn{
+  margin-top:30rpx;
+}
+button{
+  background-color: #fff;
+}
+.info{
+  color: #333333;
+}
+button::after {
+  border: none;
+}
+.start{
+  color:#fff;
+  background: #6DBDB3;
+}
+.share{
+  background: #fff;
+  color: #6DBDB3;
+  border:1px solid #6DBDB3;
+}
+.btn-handle{
+  position:absolute;
+  width:98%;
+  left:0;
+  right:0;
+  margin:0 auto;
+  font-size: 36rpx;
+  text-align: center;
+  height:90rpx;
+  border-radius:50rpx;
+  line-height: 90rpx;
+}
+.btn-btn{
+  height:100rpx;
+  width:76%;
+  margin:0 auto;
+  margin-top:10rpx;
+}
+.start-btn{
+  margin-top:40rpx;
+}
+.fake-btn{
+  width:75%;
+  color:#fff;
+  border-radius:50rpx;
+  background: #6DBDB3;
+  height:90rpx;
+  line-height: 90rpx;
+  opacity: 0.7;
+  margin-top:40rpx;
+}

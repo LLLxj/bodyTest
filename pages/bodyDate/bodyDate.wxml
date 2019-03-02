@@ -1,0 +1,52 @@
+<!--pages/bodyDate/bodyDate.wxml-->
+<view>
+  <form bindsubmit="formSubmit">
+    <view class="content">
+     <view class="question ">
+        <text class="title">你的名字?</text>
+        <view class="answer">
+          <input name="name" bindinput="bindName" value="{{name}}" placeholder="" maxlength="4"></input>
+        </view>
+      </view>
+      <view class="question">
+        <text class="title">你是男生还是女生?</text>
+        <view class="answer">
+          <picker bindchange="bindPickerChange" range="{{sexarray}}">
+            <input placeholder-class="phcolor" name="sex" placeholder="" value='{{sex}}' disabled="true" />
+          </picker>
+        </view>
+      </view>
+     
+      <view class="question">
+        <text class="title">你的年龄?</text>
+        <view class="answer">
+          <picker bindchange="bindChangeAge" range="{{ageArray}}">
+            <input placeholder-class="phcolor" name="age" placeholder="" value='{{age}}' disabled="true" />
+          </picker>
+          <view class="obj">岁</view>
+        </view>
+      </view>
+      <view class="question">
+        <text class="title">你的身高?</text>
+        <view class="answer">
+          <picker bindchange="bindChangeHeight" range="{{heightArray}}">
+            <input placeholder-class="phcolor" name="height" placeholder="" value='{{height}}' disabled="true" />
+          </picker>
+          <view class="obj">cm</view>
+        </view>
+      </view>
+      <view class="question">
+        <text class="title">你的体重?</text>
+        <view class="answer">
+          <picker bindchange="bindChangeWeight" range="{{weightArray}}">
+            <input placeholder-class="phcolor" name="weight" placeholder="" value='{{weight}}' disabled="true" />
+          </picker>
+          <view class="obj">kg</view>
+        </view>
+      </view>
+    </view>
+
+    <button form-type="submit" class="next" style="background:{{bac}}">下一步</button>
+    <!-- <button bindtap='next' class="next">下一步</button> -->
+  </form>
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "体态评估报告",
+  "usingComponents": {
+    "circles": "/components/circles/circles"
+  }
+}

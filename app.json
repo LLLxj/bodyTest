@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/takePic/takePic",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/bodyDate/bodyDate",
+    "pages/viewFace/viewFace",
+    "pages/takeSide/takeSide",
+    "pages/viewSide/viewSide",
+    "pages/result/result",
+    "pages/agreeMent/agreeMent",
+    "pages/resultDetil/resultDetil",
+    "pages/test/test"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#7f8389",
+    "selectedColor": "#6ac4d2",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/jianli.png",
+        "iconPath": "images/jianli2.png",
+        "pagePath": "pages/home/home",
+        "text": "监测"
+      },
+      {
+        "selectedIconPath": "images/club.png",
+        "iconPath": "images/club1.png",
+        "pagePath": "pages/result/result",
+        "text": "报告"
+      }
+    ]
+  }
+}

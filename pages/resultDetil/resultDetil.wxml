@@ -1,0 +1,173 @@
+<!--pages/resultDetil/resultDetil.wxml-->
+<view class="wrap" >
+  <view class="totalData">
+    <view class="getNum">
+      <text class="num">{{score}}</text>
+      <text class="num numTitle">体态评分</text>
+    </view>
+    <view class="getRank">
+      <text class="rank rankTitle">需要警惕</text>
+      <text class="rank rankInfo">优于全国{{score}}%的人</text>
+    </view>
+    <view class="clear"></view>
+  </view>
+
+  <view class="bodyData">
+    <view class="bodyData-wrap bodyData-wrap-add">
+      <text class="bodyData-title">体态数据</text>
+      <view class="showPic">
+        <view class="picPos">
+          <image src="{{posPic}}"></image>
+        </view>
+        <view class="picSide">
+          <image src="{{sidePic}}"></image>
+        </view>
+        <view class="clear"></view>
+      </view>
+    </view>
+  </view>
+
+  <view class="bodyData-bor" style="margin-top:30rpx;">
+    <view class="bodyData-wrap" wx:if="{{data.riskdict.dangerous.length !== 0}}">
+      <view class="proDetail">
+        <view class="proTitle">危险</view>
+        <view class="proNum"><text class="proNu">{{data.riskdict.dangerous.length}}</text>项</view>
+        <view class="clear"></view>
+      </view>
+      <view class="ansList" wx:for="{{data.riskdict.dangerous}}" wx:key="unique">
+        <view class="posDetail">
+          <view class="posTrue">
+            <!-- <image src="{{item.prototype}}" mode="widthFix"></image> -->
+            <image src="{{item.icon}}" mode="widthFix"></image>
+          </view>
+          <view class="posFake">
+            <image src="{{item.img}}" mode="widthFix"></image>
+          </view>
+          <view class="clear"></view>
+        </view>
+        <view class="detailRank">
+          <!--index.wxml-->
+          <view class="con">  
+            <view class="result-ques">{{item.name}}</view>  
+            <view class='progress_box'>
+              <canvas class="progress_bg" canvas-id="canvasProgressbg{{item.id}}{{item.val}}">  </canvas> 
+              <canvas class="progress_canvas" canvas-id="canvasProgress{{item.id}}{{item.val}}">  </canvas> 
+              <view class="progress_text">
+                <view class="progress_dot">风险值</view> 
+                <text class='progress_info dan-val'> {{item.val}}</text>
+              </view>     
+            </view>
+          </view>
+
+        </view>
+        <view class="clear"></view>
+
+        <view class="shortDetail">
+          {{item.plan}}
+        </view>
+
+        <view class="viewResolve">
+          <text>查看解决方案</text>
+          <image src="../../images/right1.png"></image>
+          <view class="clear"></view>
+        </view>
+      
+      </view>
+
+    </view>
+
+    <view class="bodyData-wrap" wx:if="{{data.riskdict.warning.length !== 0}}">
+      <view class="proDetail">
+        <view class="proTitle">潜在风险</view>
+        <view class="proNum"><text class="proNu">{{data.riskdict.warning.length}}</text>项</view>
+        <view class="clear"></view>
+      </view>
+      <view class="ansList" wx:for="{{data.riskdict.warning}}" wx:key="unique">
+        <view class="posDetail">
+          <view class="posTrue">
+            <image src="{{item.icon}}" mode="widthFix"></image>
+          </view>
+          <view class="posFake">
+            <image src="{{item.img}}" mode="widthFix"></image>
+          </view>
+          <view class="clear"></view>
+        </view>
+        <view class="detailRank">
+          <!--index.wxml-->
+          <view class="con">   
+            <view class="result-ques">{{item.name}}</view> 
+            <view class='progress_box'>
+              <canvas class="progress_bg" canvas-id="canvasProgressbg{{item.id}}{{item.val}}">  </canvas> 
+              <canvas class="progress_canvas" canvas-id="canvasProgress{{item.id}}{{item.val}}">  </canvas> 
+              <view class="progress_text">
+                <view class="progress_dot">风险值</view> 
+                <text class='progress_info wan-val'> {{item.val}}</text>
+              </view>     
+            </view>
+          </view>
+
+        </view>
+        <view class="clear"></view>
+
+        <view class="shortDetail">
+          {{item.plan}}
+        </view>
+
+        <view class="viewResolve">
+          <text>查看解决方案</text>
+          <image src="../../images/right1.png"></image>
+          <view class="clear"></view>
+        </view>
+      
+      </view>
+
+    </view>
+
+    <view class="bodyData-wrap" wx:if="{{data.riskdict.normal.length !== 0}}">
+      <view class="proDetail">
+        <view class="proTitle">正常</view>
+        <view class="proNum"><text class="proNu proNu-color">{{data.riskdict.normal.length}}</text>项</view>
+        <view class="clear"></view>
+      </view>
+      <view class="ansList" wx:for="{{data.riskdict.normal}}" wx:key="unique">
+        <view class="posDetail">
+          <view class="posTrue">
+            <image src="{{item.icon}}" mode="widthFix"></image>
+          </view>
+          <view class="posFake">
+            <image src="{{item.img}}" mode="widthFix"></image>
+          </view>
+          <view class="clear"></view>
+        </view>
+        <view class="detailRank">
+          <!--index.wxml-->
+          <view class="con">  
+          <view class="result-ques">{{item.name}}</view>  
+            <view class='progress_box'>
+              <canvas class="progress_bg" canvas-id="canvasProgressbg{{item.id}}{{item.val}}">  </canvas> 
+              <canvas class="progress_canvas" canvas-id="canvasProgress{{item.id}}{{item.val}}">  </canvas> 
+              <view class="progress_text">
+                <view class="progress_dot">风险值</view> 
+                <text class='progress_info nor-val'> {{item.val}}</text>
+              </view>     
+            </view>
+          </view>
+
+        </view>
+        <view class="clear"></view>
+
+        <view class="shortDetail">
+          {{item.plan}}
+        </view>
+
+        <view class="viewResolve">
+          <text>查看解决方案</text>
+          <image src="../../images/right1.png"></image>
+          <view class="clear"></view>
+        </view>
+      
+      </view>
+
+    </view>
+  </view>
+</view>

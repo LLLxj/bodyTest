@@ -1,0 +1,44 @@
+/* pages/bodyDate/bodyDate.wxss */
+.content{
+  width: 60%;
+  margin-left:25%;
+  /* margin: 0 auto; */
+  padding-top: 30rpx;
+}
+
+.question{
+  /* text-align: center; */
+  margin-top: 40rpx;
+  padding-bottom: 20rpx;
+}
+.question .title{
+  color:#333333;
+  font-size: 44rpx;
+}
+.question .answer{
+  width:40%;
+  margin-top: 20rpx;
+  border-bottom:2rpx solid #DFDFDF;
+  position:relative;
+}
+.obj{
+  position:absolute;
+  font-size: 30rpx;
+  left:35%;
+  bottom:0rpx;
+  color:#616161;
+}
+.next{
+  width:70%;
+  left:0;
+  right:0;
+  margin:0 auto;
+  position:fixed;
+  border-radius:40rpx;
+  bottom:50rpx;
+  color:#fff;
+}
+input{
+  color:#616161;
+  font-size: 30rpx;
+}

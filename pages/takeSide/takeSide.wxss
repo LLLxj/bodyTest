@@ -1,0 +1,61 @@
+/* pages/home/home.wxss */
+.wrap{
+  position:fixed;
+  width:100%;
+}
+.cover-contain{
+  position:relative;
+  width:45%;
+  margin:0 auto;
+  margin-top:80rpx;
+}
+.cover-image{
+  width:38%;
+  margin:0 auto;
+}
+.cover-info{
+  position:absolute;
+  width:100%;
+  height:56rpx;
+  text-align: center;
+  line-height: 56rpx;
+  color:#fff;
+  background: #000000;
+  opacity: 0.5;
+  top:450rpx;
+  left:0;
+  right:0;
+  margin:0 auto;
+}
+.cover-direct{
+  position:absolute;
+  width:188rpx;
+  height:208rpx;
+  top:170rpx;
+  left:0;
+  right:0;
+  margin:0 auto;
+}
+.foot{
+  /* height:210rpx; */
+  background: black;
+  padding-top:40rpx;
+}
+.take-pic{
+  width:120rpx;
+  height:120rpx;
+  margin:0 auto;
+  border-radius:50%;
+  position:relative;
+}
+.pic{
+  position:absolute;
+  top:0;
+  height: 120rpx;
+  line-height: 120rpx;
+}
+.cover{
+  position:absolute;
+  top:0;
+  left:0;
+}

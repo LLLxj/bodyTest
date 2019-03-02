@@ -1,0 +1,238 @@
+/* pages/resultDetil/resultDetil.wxss */
+.wrap{
+  width:100%;
+  background: #FAFAFA;
+  /* border:1px solid red; */
+}
+.totalData{
+  width:100%;
+  padding:30rpx 0;
+}
+.getNum{
+  float:left;
+  width:20%;
+  margin-left: 8%;
+}
+.num{
+  width:100%;
+  display:block;
+  font-size: 72rpx;
+  color:#FB910B;
+  margin-top:15rpx;
+}
+.numTitle{
+  font-size: 26rpx!important;
+  color:#707070;
+  margin-top:25rpx;
+}
+.getRank{
+  width:45%;
+  float:right;
+}
+.rank{
+  text-align: center;
+  width:100%;
+  display:block;
+  color:#FB910B;
+  margin-top:35rpx;
+}
+.rankTitle{
+  font-size: 48rpx;
+}
+.rankInfo{
+  font-size: 26rpx!important;
+  color:#707070;
+  margin-top:30rpx;
+}
+
+.bodyData{
+  background: #fff;
+  width:100%;
+}
+.bodyData-bor{
+  background: #FAFAFA;
+  width:100%;
+}
+.bodyData-wrap{
+  width:100%;
+  padding:50rpx 0 0 0;
+  background: #fff;
+  margin-top:20rpx;
+  /* width:90%;
+  padding: 40rpx 5%; */
+}
+.bodyData-wrap-add{
+  padding:50rpx 0 40rpx 0;
+}
+.showPic{
+  width:100%;
+  margin-top:50rpx;
+}
+.picPos{
+  width:42%;
+  float:left;
+  margin-left:4%;
+  border-radius:5px;
+}
+.picPos image{
+  width:100%;
+}
+.picSide{
+  width:42%;
+  float:right;
+  margin-right:4%;
+  border-radius:5px;
+}
+.bodyData-title{
+  margin-left:4%;
+  font-size:18px;
+  font-weight:bold;
+}
+.picSide image{
+  width:100%;
+}
+.proDetail{
+  width:90%;
+  padding:0 5%;
+}
+.proTitle{
+  float:left;
+  color:#2D2D2D;
+  font-size:18px;
+  font-weight:bold;
+}
+.proNum{
+  float:right;
+  color:#838383;
+}
+.proNu{
+  color:#E99830;
+}
+.proNu-color{
+  color:#27B787
+}
+/* 危险的数值 */
+.dan-val{
+  color:#F65562
+}
+/* 潜在的数值 */
+.wan-val{
+  color:#E4881D;
+}
+/* 正常的数值 */
+.nor-val{
+  color: #33B88D
+}
+.ansList{
+  width:100%;
+  border-bottom: 1px solid #F2F2F2;
+}
+.posDetail{
+  width:62%;
+  float:left;
+  margin-left:4%;
+  margin-top:40rpx;
+}
+.detailRank{
+  width:28%;
+  float:right;
+  margin-right:4%;
+  margin-top:40rpx;
+}
+.posTrue{
+  width:48%;
+  float:left;
+}
+.posTrue image{
+  width:100%;
+  border-radius: 5px;
+}
+.posFake{
+  width:48%;
+  float:right;
+}
+.posFake image{
+  width:100%;
+  border-radius: 5px;
+}
+.shortDetail{
+  margin-top:30rpx;
+  color:#5F5F5F;
+  word-wrap:break-word;
+  font-size: 28rpx;
+  margin-left:4%;
+  margin-right:4%;
+  text-align: center;
+}
+.viewResolve{
+  color:#A1A1A1;
+  padding: 40rpx 0; 
+}
+.viewResolve text{
+  float:left;
+  font-size: 28rpx;
+  margin-left:33%;
+}
+.viewResolve image{
+  float:left;
+  width:15rpx;
+  height:15rpx;
+  margin-left:30rpx;
+  margin-top: 13rpx;
+}
+.clear{
+  clear:both;
+}
+
+/* 进度条样式 */
+/**index.wxss**/
+/*圆环进度条文字*/
+.progress_box{
+  position: relative;
+  width:100%;
+  height: 90px;  
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  margin-top:10rpx;
+  /* background-color: #eee; */
+}
+.progress_bg{
+  position: absolute;
+  width:90px;
+  height: 90px; 
+}
+.progress_canvas{ 
+  width:90px;
+  height: 90px; 
+} 
+.progress_text{ 
+  position: absolute; 
+  width:100%;
+  /* display: flex;  
+  align-items: center;
+  justify-content: center */
+}
+.progress_info{  
+  width:100%;
+  display:block; 
+  margin-top:10rpx;
+  font-size: 26rpx;
+  letter-spacing: 2rpx;
+  text-align: center;
+} 
+.progress_dot{
+  font-size: 24rpx;
+  display:block;
+  width:100%; 
+  text-align: center;
+}
+
+
+.result-ques{
+  width:100%;
+  text-align: center;
+  font-size: 34rpx;
+}
+
+

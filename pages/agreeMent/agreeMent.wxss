@@ -1,0 +1,25 @@
+/* pages/agreeMent/agreeMent.wxss */
+.wrap{
+  background: #FBFBFB;
+  
+}
+.content{
+  width:94%;
+  padding: 0 3%;
+}
+.title{
+  display: block;
+  width:100%;
+  text-align: center;
+  padding:30rpx 0 0 0; 
+  color:#000;
+  font-size: 22px;
+  font-weight:bold;
+}
+.sign-title{
+  font-size: 18px;
+  font-weight:bold;
+}
+.sign-content{
+  font-size: 16px;
+}

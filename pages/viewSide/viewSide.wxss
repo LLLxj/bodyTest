@@ -1,0 +1,36 @@
+/* pages/viewFace/viewFace.wxss */
+.wrap{
+  width:100%;
+  padding-top:150rpx;
+}
+.content{
+  width:70%;
+  margin:0 auto;
+}
+.content image{
+  width:100%;
+}
+.foot{
+  width:80%;
+  margin:0 auto;
+  margin-top:150rpx;
+}
+.clear{
+  clear:both;
+}
+.btn{
+  border:1px solid #24C68B;
+  width:46%;
+  text-align: center;
+  padding:20rpx 0;
+  border-radius:45rpx;
+}
+.again{
+  float:left;
+  color: #24C68B;
+}
+.toTakeSide{
+  float:right;
+  background: #24C68B;
+  color:#fff;
+}

@@ -1,0 +1,26 @@
+<view class="wrap" style="width:{{width}}px;height:{{height}}px;">
+  
+  <camera device-position="back" flash="off" binderror="error" style="width: 100%; height:1000rpx">
+    <cover-view class="cover-contain">
+      <cover-image class="cover-image" src="../../images/side.png"></cover-image>
+      <cover-image class="cover-direct to-left" hidden="{{!left}}" src="../../images/left.png"></cover-image>
+      <cover-view class="cover-info word-left" hidden="{{!left}}">请向左旋转手机</cover-view>
+      <cover-image class="cover-direct to-right" hidden="{{!right}}" src="../../images/right.png"></cover-image>
+      <cover-view class="cover-info word-right" hidden="{{!right}}">请向右旋转手机</cover-view>
+      <cover-image class="cover-direct to-top" hidden="{{!top}}" src="../../images/top.png"></cover-image>
+      <cover-view class="cover-info word-bottom" hidden="{{!top}}">请向上旋转手机</cover-view>
+      <cover-image class="cover-direct to-bottom" hidden="{{!bottom}}" src="../../images/bottom.png"></cover-image>  
+       <cover-view class="cover-info word-top" hidden="{{!bottom}}">请向下旋转手机</cover-view> 
+    </cover-view>
+  </camera>
+  
+  <view class="foot" style="height:18%">
+  
+    <view class="take-pic" style="background:{{takeBac}};border:5px solid {{takeborder}};">
+      <button type="primary" class="pic" bindtap="{{canTakePic ? 'takePhoto' : ''}}" style="opacity:0">拍照</button> 
+    </view>
+    
+    
+    <!-- <image mode="widthFix" src="{{src}}"></image> -->
+  </view>
+</view>
